@@ -1,0 +1,111 @@
+@media screen and (max-width:760px){
+  body{
+    font-size: 12px;
+  }
+ 
+  .inner{
+    display: inline-block;
+  }
+  .logo{
+    margin: 0 auto;
+  }
+  .nav li{
+    display: inline;
+    padding-right: 10px;
+  }
+  .content h1{
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+  }
+  .description{
+    font-size: 12px;
+    margin: 0;
+    padding: 15px;
+  }
+  .form-block{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .label,
+legend{
+  color: #d22856;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-right:10px ;
+  margin:0;
+}
+  .form-col-1,
+  .form-col-2{
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .form-col-1 .row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .form-col-2 fieldset{
+    padding: 42px 42px 0 0;
+  }
+  .form-col-2 .row{
+    padding: 10px 0 10% 45% ;
+    position: relative;
+  }
+  .radio-lbl::after{
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 18%;
+    width: 15px;
+    height: 15px;
+    background:  #d22856;
+    border-radius: 50%;
+    display: none;
+    }
+    .btn{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    button{
+      font-size: 10px;
+      padding: 10px 10px;
+    }
+}
+@media screen and (max-width:480px){
+  .phone{
+    position: relative;
+  }
+   .phone label::after {
+     content: "";
+    position: absolute;
+    background: url(../images/ph.png) 50% 50% no-repeat;
+    top: 2px;
+    right: 2px;
+    height: 53px;
+    width: 45px;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+  }
+  .email{
+    position: relative;
+  }
+  .email label::after{
+    content: "";
+   position: absolute;
+   background: url(../images/em.png) 50% 50% no-repeat;
+   top: 2px;
+    right: 2px;
+    height: 53px;
+    width: 45px;
+   border: 1px solid #e5e5e5; 
+   border-radius: 2px;
+}
+}
